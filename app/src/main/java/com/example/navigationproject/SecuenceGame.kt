@@ -97,7 +97,7 @@ class SecuenceGame: Fragment(), View.OnClickListener {
             verificarSecuencia(tag.toString(), iv)
         } else {
             if(lose == 1){
-                var msm = "Alcanzaste con un puntaje de $puntos, ¡Felciitaciones!"
+                var msm = "Alcanzaste un puntaje de $puntos, ¡Felciitaciones!"
                 Toast.makeText(this.context, msm,Toast.LENGTH_LONG).show()
             }
         }
@@ -115,7 +115,7 @@ class SecuenceGame: Fragment(), View.OnClickListener {
             }, 250)
         }else{
             lose = 1
-            Toast.makeText(this.context, "Perdiste con un puntaje de $puntos",Toast.LENGTH_LONG).show()
+            Toast.makeText(this.context, "Alcanzaste un puntaje de $puntos",Toast.LENGTH_LONG).show()
         }
     }
 
