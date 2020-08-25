@@ -29,11 +29,11 @@ class MainFragment : Fragment() {
         userPlayer = Player("ettop", 1000)
         var bundle = bundleOf("infoplayer" to userPlayer)
         button2.setOnClickListener{
-            Toast.makeText(context, "Hola bienvenido "+ userPlayer.nickname, Toast.LENGTH_SHORT).show()
+            //Llama al fragment del juego 1
             navController!!.navigate(R.id.action_mainFragment_to_pairsGame, bundle)
         }
         button4.setOnClickListener{
-            Toast.makeText(context, "Hola bienvenido "+ userPlayer.nickname, Toast.LENGTH_SHORT).show()
+            //Llama al fragment del juego 2
             navController!!.navigate(R.id.action_mainFragment_to_secuenceGame,bundle)
         }
     }
