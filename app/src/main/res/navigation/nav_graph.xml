@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/secuenceGame"
+        android:name="com.example.navigationproject.SecuenceGame"
+        android:label="fragment_secuence_game"
+        tools:layout="@layout/fragment_secuence_game" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.navigationproject.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_secuenceGame"
+            app:destination="@id/secuenceGame" />
+        <action
+            android:id="@+id/action_mainFragment_to_pairsGame"
+            app:destination="@id/pairsGame" />
+    </fragment>
+    <fragment
+        android:id="@+id/pairsGame"
+        android:name="com.example.navigationproject.PairsGame"
+        android:label="fragment_pairs_game"
+        tools:layout="@layout/fragment_pairs_game" />
+</navigation>

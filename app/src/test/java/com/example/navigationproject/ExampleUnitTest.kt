@@ -1,4 +1,4 @@
-package com.example.memorygames_navigationproject
+package com.example.navigationproject
 
 import org.junit.Test
 
